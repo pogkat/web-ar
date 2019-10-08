@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebAR in action!</title>
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+<a-scene arjs embedded>
+    <a-marker preset="hiro">
+        <a-box color="blue" position="1 1 -2“ rotation="0 30 30“
+               animation="property: rotation; to: 0 360 360; loop: true; dur: 10000"
+        </a-box>
+    </a-marker>
+</a-scene>
+</body>
+</html>

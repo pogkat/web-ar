@@ -1,0 +1,27 @@
+<html>
+<script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+<style>
+    a{
+        z-index: 999;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+</style>
+<body style='margin : 0; overflow: hidden;'>
+<a-scene embeded  arjs='debugUIEnabled: false;'>
+    <a-assets>
+
+        <img id="earth" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_atmos_4096.jpg">
+    </a-assets>
+    <a-marker preset="hiro" id="hiroMarker"  emitevents="true" cursor="rayOrigin: mouse">
+        <a-sphere id="earthModel"  animation="property: rotation; to: 0 360 360; loop: true; dur: 10000"  position="1 1 -3" radius="1"  color="#FFFFFF" src="#earth"></a-sphere>
+
+    </a-marker>
+    <a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>

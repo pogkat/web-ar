@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebAR in action!</title>
+    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+</head>
+<body>
+<a-scene arjs embedded>
+    <a-assets>
+        <a-asset-item id="tree" src="https://cdn.aframe.io/test-models/models/glTF-2.0/brainstem/BrainStem.gltf" />
+
+    </a-assets>
+    <a-marker preset="hiro">
+        <a-gltf-model src="#tree" rotation="0 45 90" scale="0.5 0.5 0.5" position="1 1 -2"></a-gltf-model>
+    </a-marker>
+</a-scene>
+</body>
+</html>
