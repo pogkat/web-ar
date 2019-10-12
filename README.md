@@ -35,10 +35,16 @@ Then open http://127.0.0.1:8080 to see your app.
    1. < a-cylinder > 
 [start](https://codepen.io/misshai/pen/WNeELjw)
 or in cube folder
-1. Try to include a 3D model
+1. Include a 3D model
    1. < a-gltf-model >
+   1. Go to https://github.com/KhronosGroup/glTF-Sample-Models/tree/master/2.0
+   1. Select model
+   1. glTF/<model name>.gltf
+   1. Click raw
+   1. Copy URL and use it
 [start](https://codepen.io/misshai/pen/GRKevXQ)
 or in models folder
+More models to try:
 
 #### Bonus
 
